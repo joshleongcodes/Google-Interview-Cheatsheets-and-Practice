@@ -5,7 +5,7 @@
 
 <p>See extra resources here, of relating to the interview process:</p>
 <ul>
-	<li><a href="https://github.com/JacobHinkston/Google-Interview-Cheatsheats-and-Practice/[Google Interview Prep Guide] SWE.pdf">Google Interview Prep Guide [PDF]</a></li>
+	<li><a href="https://github.com/JacobHinkston/Google-Interview-Cheatsheats-and-Practice/blob/master/%5BGoogle%20Interview%20Prep%20Guide%5D%20SWE.pdf">Google Interview Prep Guide [PDF]</a></li>
 </ul>
 <p>The interviewer will be evaluating your:</p>
 
