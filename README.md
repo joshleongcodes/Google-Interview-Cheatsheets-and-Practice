@@ -3,6 +3,10 @@
 	This repo was made for opportunity. Anyone who has the opportunity to interview at Google knows the amount of work you have to put in to get it. I want everyone to be able to share this opportunity. So I made a repo with all the work that I have done to showcase what you might expect, and how to better prepare for it. Best of luck!
 </p>
 
+<p>See extra resources here, of relating to the interview process:</p>
+<ul>
+	<li><a href="https://github.com/JacobHinkston/Google-Interview-Cheatsheats-and-Practice/[Google Interview Prep Guide] SWE.pdf">Google Interview Prep Guide [PDF]</a></li>
+</ul>
 <p>The interviewer will be evaluating your:</p>
 
 <ul>
