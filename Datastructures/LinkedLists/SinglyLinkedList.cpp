@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 struct Node {
     int data;
     Node* next;
 };
 
-class LinkedList {
+class SinglyLinkedList {
     public:
-        LinkedList(){ head = NULL; }
-        ~LinkedList(){ }
+        SinglyLinkedList(){ head = NULL; }
+        ~SinglyLinkedList(){ }
         void addNode(int data){
             Node* newNode = new Node; // Allocating memory for a new Node item.
             newNode-> data = data, newNode->next = NULL; // Setting values for the new Node item.
@@ -19,7 +20,7 @@ class LinkedList {
             } else { // If there isnt a head pointer, point the head to the new node.
                 head = newNode; 
             }
-            printf("Node with data, %i has been added. \n", data);
+            cout << "Node with data" << data << ", has been added." << endl;
         }
         void printList(){
             if(head) { // IF there is a head pointer, meaning if the LL had been initialized with another item.
@@ -28,13 +29,13 @@ class LinkedList {
                     if(c->next) printf("->");
                 }
             } else { // If there isnt a head pointer, point the head to the new node.
-                printf("There are no nodes in this list.");
+                cout << "There are no nodes in this list." << endl;
             }
             printf("\n");
         }
         void deleteNode(int data, bool deleteAll){
             if(deleteAll){
-                printf("IMPLEMENT");
+                cout << "Delete all needs to be implemented." << endl;
                 // TODO: Implement
                 // if(head) { //If there is a list.
                 //     Node* temp = NULL; // Temp node to store the node before current.
@@ -74,12 +75,12 @@ class LinkedList {
                         else if(c->next) temp->next = c->next;
                         else temp->next = NULL;
                         delete c;
-                        printf("The node with data, %i, was deleted.\n", data);
+                        cout << "The node with data " << data << ", was deleted." << endl;
                     } else {
-                        printf("The node with data, %i, was not found.\n", data);
+                        cout << "The node with data " << data << ", was not found." << endl;
                     }
                 } else {
-                    printf("There are no nodes in this list.");
+                    cout << "There are no nodes in this list." << endl;
                 }
             }
         }
@@ -103,12 +104,12 @@ class LinkedList {
                         temp->next = c->next;
                     }
                     delete c;
-                    printf("Node at index %i, has been deleted.\n", index);
+                    cout << "Node at index "<< index << ", has been deleted." << endl;
                 } else {
-                    printf("Node at index %i, does not exist.\n", index);
+                    cout << "Node at index "<< index << ", does not exist." << endl;
                 }
             } else {
-                printf("There are no nodes in this list.\n");
+                cout << "There are no nodes in this list." << endl;
             }
         }
     
@@ -117,14 +118,14 @@ class LinkedList {
 };
 
 int main(int argvc, char* argv[]) {
-    LinkedList LL;
-    LL.addNode(1);
-    LL.addNode(3);
-    LL.addNode(6);
-    LL.addNode(9);
-    LL.printList();
-    LL.deleteNodeAtIndex(3);
-    LL.printList();
-
+    SinglyLinkedList singlyLinkedList;
+    singlyLinkedList.addNode(1);
+    singlyLinkedList.addNode(2);
+    singlyLinkedList.addNode(3);
+    singlyLinkedList.printList();
+    singlyLinkedList.deleteNode(1, false);
+    singlyLinkedList.deleteNode(2, false);
+    singlyLinkedList.deleteNode(3, false);
+    singlyLinkedList.printList();
     return 0;
 }

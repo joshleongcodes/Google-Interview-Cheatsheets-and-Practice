@@ -1,4 +1,5 @@
 #include <stdio.h>
+using namespace std;
 
 struct Node { // Each node in our DLL is going to be a struct object of 'Node' type;
     int data; //Data to be held by each node/
@@ -11,13 +12,14 @@ struct Node { // Each node in our DLL is going to be a struct object of 'Node' t
 	}
 };
 
-class DLL { //Linkedlist class
+class DoublyLinkedList { //Linkedlist class
     public:
-        DLL() { 
+        DoublyLinkedList() { 
              // init' head and tail as null since there are no nodes in the linkedlist to start with.
             head = NULL;
             tail = NULL;
         }
+        ~DoublyLinkedList(){ }
         void addNodeAtTail(int data) {
             if(tail) {
                 Node* newNode = new Node(data, tail, NULL);
@@ -82,17 +84,19 @@ class DLL { //Linkedlist class
             printf("\n");
         }
     private:
-    Node* head;
-    Node* tail;
+        Node* head;
+        Node* tail;
 };
 
 int main(int argc, char* argv[]){
-    DLL dll;
-    dll.addNodeAtHead(1);
-    dll.addNodeAtTail(2);
-    dll.addNodeAtTail(3);
-    dll.printList();
-    dll.deleteNode(3);
-    dll.printList();
-
+    DoublyLinkedList doublyLinkedList;
+    doublyLinkedList.addNodeAtHead(1);
+    doublyLinkedList.addNodeAtTail(2);
+    doublyLinkedList.addNodeAtTail(3);
+    doublyLinkedList.printList();
+    doublyLinkedList.deleteNode(1);
+    doublyLinkedList.deleteNode(2);
+    doublyLinkedList.deleteNode(3);
+    doublyLinkedList.printList();
+    return 0;
 }
