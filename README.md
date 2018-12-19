@@ -7,6 +7,7 @@
 <ul>
 	<li><a href="https://github.com/JacobHinkston/Google-Interview-Cheatsheats-and-Practice/blob/master/%5BGoogle%20Interview%20Prep%20Guide%5D%20SWE.pdf">Google Interview Prep Guide [PDF]</a></li>
 	<li><a href="https://github.com/jwang5675/ctci/blob/master/Cracking%20the%20Coding%20Interview%206th%20Edition.pdf">Cracking the Coding Interview (6th Edition) [PDF]</a></li>
+	<li><a href="https://github.com/JacobHinkston/Google-Interview-Cheatsheets-and-Practice/tree/master/Algorithms/blob/master/Introduction%20to%20Algorithms.pdf">
 
 </ul>
 <p>The interviewer will be evaluating your:</p>
